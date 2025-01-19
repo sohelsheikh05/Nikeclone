@@ -1,0 +1,63 @@
+.BodyContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 80px 200px;
+ 
+    height: 500px;
+    text-transform: uppercase;
+}
+.BodyContent .img{
+    align-self: center;
+}
+.img img{
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    
+}
+.img {
+    width:800px;
+   
+    margin-left: 20px;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 20px;
+   
+     
+}
+.content p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.content .button{
+    display: flex;
+    
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+button{
+    padding: 10px 20px;
+ 
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sho-btn{
+    background-color: rgb(19, 191, 19);
+    color: white;
+    border: none;
+}
+.cat-btn{
+    background-color: white;
+    color: black;
+}
+.option img{
+    width: 50px;
+    height: 40px;
+    margin-left: 20px;
+}

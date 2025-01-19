@@ -1,0 +1,49 @@
+.header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 5px solid whitesmoke;
+ 
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo img{
+    width: 50px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li{
+    margin: 0 20px;
+    cursor: pointer;
+   font-weight: 900;
+   font-size: 15px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.Login button{
+    padding: 10px 20px;
+    background-color: rgb(16, 209, 19);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Login{
+    margin-right: 50px;
+}
+
+.nav-bar ul li a:hover{
+    color: rgb(16, 209, 19);
+    border-bottom: 2px solid rgb(213, 77, 27);
+}
