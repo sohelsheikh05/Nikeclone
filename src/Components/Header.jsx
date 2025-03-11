@@ -1,9 +1,12 @@
 import Logo from "../assets/Logo.png"
 import "./Header.css"
-
+import {GoogleLogin} from "react-google-login"
 const Header=()=>{
-    const handlelogin=()=>{
-        alert("Login")
+    const handleSuccess=()=>{
+        alert("Login Successfully")
+    }
+    const handleFailure=()=>{
+        alert("Login Failed")
     }
     return(
         <>
@@ -22,9 +25,14 @@ const Header=()=>{
                 </ul>
             </div>
             <div className="Login">
-                <button type="button" onClick={handlelogin}>Login</button>
+                <GoogleLogin
+                clientId="237072706962-a5p1eq2so6meqci4fv6mddrh2jt7su7r.apps.googleusercontent.com"
+                onSuccess={handleSuccess}
+                onFailure={handleFailure}
+                cookiePolicy={"single_host_origin"}
+                />
             </div>
-          
+        
         </div>
         </>
     )
