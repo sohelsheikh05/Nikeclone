@@ -6,9 +6,7 @@ const Header=()=>{
     const handleSuccess=()=>{
         alert("Login Successfully")
     }
-    const handleFailure=()=>{
-        alert("Login Failed")
-    }
+    
     return(
         <>
         <div className="header">
