@@ -1,6 +1,10 @@
 import Logo from "../assets/Logo.png"
 import "./Header.css"
+
 const Header=()=>{
+    const handlelogin=()=>{
+        alert("Login")
+    }
     return(
         <>
         <div className="header">
@@ -18,7 +22,7 @@ const Header=()=>{
                 </ul>
             </div>
             <div className="Login">
-                <button>Login</button>
+                <button type="button" onClick={handlelogin}>Login</button>
             </div>
           
         </div>
