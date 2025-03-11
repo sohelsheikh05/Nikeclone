@@ -2,7 +2,7 @@ import Header from './Components/Header'
 import './App.css'
 import {gapi} from 'gapi-script'  
 import BodyContent from './Components/BodyContent'
-import { use, useEffect } from 'react'
+import { useEffect } from 'react'
 function App() {
  useEffect(() => {
     function start()  {
