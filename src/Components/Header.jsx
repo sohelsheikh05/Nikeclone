@@ -1,7 +1,8 @@
 import Logo from "../assets/Logo.png"
 import "./Header.css"
-import {GoogleLogin} from "react-google-login"
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 const Header=()=>{
+    const CLIENT_ID="237072706962-a5p1eq2so6meqci4fv6mddrh2jt7su7r.apps.googleusercontent.com"
     const handleSuccess=()=>{
         alert("Login Successfully")
     }
@@ -25,12 +26,17 @@ const Header=()=>{
                 </ul>
             </div>
             <div className="Login">
-                <GoogleLogin
-                clientId="237072706962-a5p1eq2so6meqci4fv6mddrh2jt7su7r.apps.googleusercontent.com"
-                onSuccess={handleSuccess}
-                onFailure={handleFailure}
-                cookiePolicy={"single_host_origin"}
-                />
+            <GoogleOAuthProvider clientId={CLIENT_ID}>
+      <div className="App">
+        
+        
+          <GoogleLogin
+            onSuccess={handleSuccess}            onError={() => console.log("Login Failed")}
+          />
+        
+      </div>
+    </GoogleOAuthProvider>
+ 
             </div>
         
         </div>
